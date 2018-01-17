@@ -39,3 +39,4 @@ Thumbs.db
 /vendor
 /.idea
 /logs/*.log
+/.sass-cache
