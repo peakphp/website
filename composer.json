@@ -1,7 +1,6 @@
 {
-    "name": "peakphp/app-barebone",
-    "description": "Peak Barebone Application.",
-    "keywords": ["peak", "framework", "app", "cli-app"],
+    "name": "peakphp/website",
+    "description": "Peak Official Website",
     "license": "BSD-3-Clause",
     "type": "project",
     "require": {
