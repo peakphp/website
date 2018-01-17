@@ -1,0 +1,21 @@
+RewriteEngine On
+
+## never rewrite for existing files, directories and links
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+
+## rewrite everything else to index.php
+
+RewriteRule !\.(js|ico|gif|jpg|png|css)$ index.php
+
+Header set X-Content-Type-Options nosniff
+Header set X-Frame-Options DENY
+Header set X-XSS-Protection "1; mode=block"
+Header set Referrer-Policy no-referrer-when-downgrade
+Header set Strict-Transport-Security "max-age=2592000"
+Header set Expect-CT "max-age=2592000"
+Header always unset X-Powered-By
+Header set X-Powered-By Electricity
+Header always unset Server
