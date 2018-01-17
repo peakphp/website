@@ -9,6 +9,7 @@ Thumbs.db
 
 # ignore compiled files
 *.com
+*.bat
 *.class
 *.dll
 *.exe
