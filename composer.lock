@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0cc754e120b1a5b301591b6e41f405ba",
+    "content-hash": "f666df7b2d809262ae220ff61a452bbb",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -482,16 +482,16 @@
         },
         {
             "name": "peakphp/framework",
-            "version": "v2.22.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/peakphp/framework.git",
-                "reference": "d8913965579413d55d7800a4d5419fa2e779c45e"
+                "reference": "2c00a6ada3b3e9a2efda1fae2af8d15407ced67f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/peakphp/framework/zipball/d8913965579413d55d7800a4d5419fa2e779c45e",
-                "reference": "d8913965579413d55d7800a4d5419fa2e779c45e",
+                "url": "https://api.github.com/repos/peakphp/framework/zipball/2c00a6ada3b3e9a2efda1fae2af8d15407ced67f",
+                "reference": "2c00a6ada3b3e9a2efda1fae2af8d15407ced67f",
                 "shasum": ""
             },
             "require": {
@@ -530,7 +530,7 @@
                 "framework",
                 "peak"
             ],
-            "time": "2017-12-06T14:30:20+00:00"
+            "time": "2018-01-18 16:51:01"
         },
         {
             "name": "psr/container",
@@ -2191,7 +2191,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "peakphp/framework": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

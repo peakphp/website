@@ -18,7 +18,7 @@ return [
 
     // Define default workflow of the front.
     'front' => [
-        'default_controller' => 'index',
+        'default_controller' => 'pages',
         'error_controller'   => 'error',
     ],
 
@@ -36,7 +36,6 @@ return [
     // Regardless of "auto_routing" value, if the request uri is empty, the front 
     // "default_controller" will be use
     'routes' => [
-        // example:
-        //'user/{id}:num | user/profile',
+        'what-is-peak | pages/whatispeak',
     ]
 ];

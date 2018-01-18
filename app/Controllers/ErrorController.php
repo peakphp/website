@@ -15,5 +15,8 @@ class ErrorController extends ActionController
     public function _index()
     {
         $this->view->header()->setCode(404);
+        if (isEnv('dev') && isset($this->exception)) {
+            $this->view->exception_msg = $this->exception->getMessage();
+        }
     }
 }
