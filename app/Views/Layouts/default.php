@@ -13,7 +13,10 @@
     <div class="page-wrapper">
         <header>
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <a class="navbar-brand" href="<?php echo url(); ?>">Peak Framework</a>
+                <a class="navbar-brand" href="<?php echo url(); ?>">
+                    <img class="logo" src="<?php echo url('assets/img/peaklogo.png'); ?>" alt="Logo">
+                    Peak Framework
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
