@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?php echo url('assets/css/site.min.css?v='.config('version')); ?>">
 </head>
-<body>
+<body class="<?php echo $this->page_class; ?>">
     <div class="page-wrapper">
         <header>
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -18,9 +18,12 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-                        <li class="nav-item active d-none">
-                            <a class="nav-link" href="#">Getting started</a>
+                    <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://peak.readthedocs.io">Supporters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://peak.readthedocs.io">Getting started</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://peak.readthedocs.io">Documentation</a>
@@ -33,7 +36,8 @@
             </nav>
         </header>
         <main role="main">
-            <section class="jumbotron text-center">
+            <section class="jumbotron jumbotron-home text-center">
+                <?php $this->renderBlock('Blocks/peak.php'); ?>
                 <div class="container">
                     <h1 class="jumbotron-heading">Simplicity, Reusability, Flexibility</h1>
                     <p class="lead text-muted">

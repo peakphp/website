@@ -14,8 +14,40 @@ body {
   position:relative;
 }
 
+header {
+  .navbar {
+    //border-bottom:4px solid $primary;
+    line-height: 2.5;
+    background: linear-gradient(141deg, $primary 0%, #333 51%, #222 75%);
+
+    @include media-breakpoint-up(sm) {
+      .nav-link {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+    }
+  }
+}
+
 main {
   padding-bottom: $footer-height;
+
+  .jumbotron-home {
+    display:none;
+    background: $gray-100;
+    //border-bottom: 1px solid #ddd;
+    position: relative;
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
+
+body.pages-index {
+  main .jumbotron-home {
+    display:inherit;
+  }
 }
 
 footer {
