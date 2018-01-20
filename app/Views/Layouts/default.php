@@ -14,7 +14,7 @@
         <header>
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
                 <a class="navbar-brand" href="<?php echo url(); ?>">
-                    <img class="logo" src="<?php echo url('assets/img/peaklogo.png'); ?>" alt="Logo">
+                    <img class="logo" src="<?php echo url('assets/img/peak.png'); ?>" alt="Logo">
                     Peak Framework
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,6 +37,7 @@
                     </ul>
                 </div>
             </nav>
+            <div class="bar"></div>
         </header>
         <main role="main">
             <section class="jumbotron jumbotron-home text-center">
