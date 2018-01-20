@@ -7,6 +7,7 @@ body, html {
 
 body {
   background-color: $body-background;
+  font-family: questrialregular, sans-serif;
 }
 
 .page-wrapper {
@@ -15,17 +16,18 @@ body {
 }
 
 header {
+
   .navbar {
-    //border-bottom:4px solid $primary;
     line-height: 2.5;
-    background: linear-gradient(141deg, $primary 0%, #000 51%, #222 75%);
+    background: linear-gradient(141deg, $primary 0%, #444 51%, #444 75%);
 
     .navbar-brand {
-      padding-left: 95px;
+      padding-left: 145px;
       font-weight: bold;
       line-height: 1.0;
-      text-shadow:1px 2px 3px #000;
+      text-shadow: 1px 2px 3px #000;
       font-size: 22px;
+      letter-spacing: 1px;
 
       .logo {
         position:absolute;
@@ -41,6 +43,13 @@ header {
         padding-right: 1rem !important;
       }
     }
+  }
+
+  .bar {
+    display: block;
+    height:5px;
+    width: 100%;
+    background: linear-gradient(141deg, $primary 10%, #444 51%, #333 75%);
   }
 }
 
