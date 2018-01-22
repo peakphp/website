@@ -40,6 +40,7 @@
             <div class="bar"></div>
         </header>
         <main role="main">
+            <?php if ($this->page_class === 'pages-index') : ?>
             <section class="jumbotron jumbotron-home text-center">
                 <?php $this->renderBlock('Blocks/peak.php'); ?>
                 <div class="container">
@@ -48,19 +49,38 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque commodi consectetur consequuntur, culpa cumque esse, est facilis illum inventore ipsa laboriosam maiores mollitia quidem recusandae rem repellendus repudiandae voluptates!
                     </p>
                     <p>
-                        <a href="#" class="btn btn-primary">
+                        <a href="<?php echo url('download'); ?>" class="btn btn-primary">
                             Download <small>v2.22.0</small>
                         </a>
                         <a class="btn btn-secondary" href="https://github.com/peakphp/framework">View on GitHub</a>
                     </p>
                 </div>
             </section>
+            <?php endif; ?>
             <section class="maint-content container">
                 <?php $this->layoutContent(); ?>
             </section>
         </main>
         <footer class="text-muted">
             <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <ul>
+                            <li><a href="<?php echo url(''); ?>">Home</a></li>
+                            <li><a href="<?php echo url('what-is-peak'); ?>">What is Peak</a></li>
+                            <li><a href="<?php echo url('supporters'); ?>">Supporters</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-4">
+                        <ul>
+                            <li><a href="<?php echo url('download'); ?>">Download</a></li>
+                            <li><a href="<?php echo url('getting-started'); ?>">Getting started</a></li>
+                            <li><a href="https://peak.readthedocs.io">Documentation</a></li>
+                            <li><a href="https://api.peakframework.com">API</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-4"></div>
+                </div>
                 <p class="float-right">
                     <a href="#">Back to top</a>
                 </p>
@@ -68,5 +88,7 @@
             </div>
         </footer>
     </div>
+    <script src="<?php echo url('assets/js/libs.min.js?v='.$this->version); ?>"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

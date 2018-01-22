@@ -1,0 +1,50 @@
+.wrapper-404 #robot-svg {
+  width:100%;
+  opacity:1;
+
+  .rect1, .rect4, .poly1, .poly2 {
+    -webkit-animation: color-anim1 3s linear infinite;
+  }
+
+  .rect2, {
+    -webkit-animation: color-anim1 2.5s linear infinite;
+  }
+
+  .rect3, {
+    -webkit-animation: color-anim1 2s linear infinite;
+  }
+
+  .path1 {
+    -webkit-animation: color-anim2 4s linear infinite;
+  }
+
+  .path2 {
+    -webkit-animation: color-anim2 5s linear infinite;
+  }
+}
+
+@-webkit-keyframes color-anim1 {
+ 0% { fill:$primary }
+ 12% { fill:$secondary }
+ 24% { fill:$gray-600 }
+ 36% { fill:$info }
+ 48% { fill:$warning }
+ 60% { fill:$danger }
+ 72% { fill:$success }
+ 84% { fill:$dark }
+ 96% { fill:$purple }
+}
+
+
+
+@-webkit-keyframes color-anim2 {
+  0% { fill:$success }
+  12% { fill:$secondary }
+  24% { fill:$primary }
+  36% { fill:$warning }
+  48% { fill:$info }
+  60% { fill:$gray-600 }
+  72% { fill:$danger }
+  84% { fill:$purple }
+  96% { fill:$dark }
+}
