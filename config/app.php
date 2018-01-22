@@ -38,7 +38,7 @@ return [
     'routes' => [
         'what-is-peak | pages/whatispeak',
         'download | pages/download',
-        'gettings-started | pages/gettingstarted',
+        'getting-started | pages/gettingstarted',
         'supporters | pages/supporters',
     ]
 ];

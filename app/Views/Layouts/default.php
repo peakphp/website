@@ -23,10 +23,10 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
                         <li class="nav-item">
-                            <a class="nav-link" href="https://peak.readthedocs.io">Supporters</a>
+                            <a class="nav-link" href="<?php echo url('supporters'); ?>">Supporters</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://peak.readthedocs.io">Getting started</a>
+                            <a class="nav-link" href="<?php echo url('getting-started'); ?>">Getting started</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://peak.readthedocs.io">Documentation</a>
