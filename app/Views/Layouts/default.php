@@ -57,7 +57,7 @@
                 </div>
             </section>
             <?php endif; ?>
-            <section class="maint-content container">
+            <section class="main-content container">
                 <?php $this->layoutContent(); ?>
             </section>
         </main>
