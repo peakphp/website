@@ -8,6 +8,7 @@
     <meta name="keywords" content="Official website of Peak Framework">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?php echo url('assets/css/site.min.css?v='.config('version')); ?>">
+    <link rel="shortcut icon" href="<?php echo url('assets/img/favicon.png'); ?>" type="image/x-icon">
 </head>
 <body class="<?php echo $this->page_class; ?>">
     <div class="page-wrapper">
@@ -15,14 +16,14 @@
             <nav class="navbar navbar-expand-md navbar-dark bg-dark">
                 <a class="navbar-brand" href="<?php echo url(); ?>">
                     <img class="logo" src="<?php echo url('assets/img/peak.png'); ?>" alt="Logo">
-                    Peak Framework
+                    <span>Peak Framework</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="icon-cog"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="collapse navbar-collapse">
                     <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
-                        <li class="nav-item">
+                        <li class="nav-item d-none">
                             <a class="nav-link" href="<?php echo url('supporters'); ?>">Supporters</a>
                         </li>
                         <li class="nav-item">
@@ -46,13 +47,16 @@
                 <div class="container">
                     <h1 class="jumbotron-heading">Simplicity, Reusability, Flexibility</h1>
                     <p class="lead text-muted">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque commodi consectetur consequuntur, culpa cumque esse, est facilis illum inventore ipsa laboriosam maiores mollitia quidem recusandae rem repellendus repudiandae voluptates!
+                        Build beautiful and fast applications, prototypes and websites with Peak Framework.
                     </p>
                     <p>
                         <a href="<?php echo url('download'); ?>" class="btn btn-primary">
-                            Download <small>v2.22.0</small>
+                            Download <i class="icon-download"></i> <small>v2.22.0</small>
                         </a>
-                        <a class="btn btn-secondary" href="https://github.com/peakphp/framework">View on GitHub</a>
+                        <a class="btn btn-secondary" href="https://github.com/peakphp/framework">
+                            View on GitHub <i class="icon-github"></i>
+                        </a>
+                        <br><a href="<?php echo url('changelog'); ?>">Changelog</a>
                     </p>
                 </div>
             </section>

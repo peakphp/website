@@ -37,6 +37,7 @@ return [
     // "default_controller" will be use
     'routes' => [
         'what-is-peak | pages/whatispeak',
+        'changelog | pages/changelog',
         'download | pages/download',
         'getting-started | pages/gettingstarted',
         'supporters | pages/supporters',

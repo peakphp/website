@@ -16,6 +16,11 @@ use Peak\Common\ExceptionLogger;
 // If no file found, [dev] will be used.
 $env = detectEnvFile(__DIR__);
 
+// app constant
+define('CACHE_PATH', realpath(__DIR__.'/../cache'));
+define('CONFIG_PATH', realpath(__DIR__.'/../config'));
+define('LOG_PATH', realpath(__DIR__.'/../logs'));
+
 // create a container
 $container = new Container;
 

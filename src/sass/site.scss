@@ -17,6 +17,7 @@ body {
 header {
 
   .navbar {
+    height: $top-navbar-height;
     line-height: 2.5;
     background: linear-gradient(141deg, $primary 0%, #444 51%, #444 75%);
 
@@ -28,11 +29,46 @@ header {
       font-size: 22px;
       letter-spacing: 1px;
 
+      @media only screen and (max-width: map-get($grid-breakpoints, md)) {
+        padding-left: 10px !important;
+        .logo {
+          z-index:9998;
+        }
+        span {
+          z-index:9999;
+          position: relative;
+        }
+      }
+
       .logo {
         position:absolute;
         top:13px;
         left:10px;
         height:64px;
+      }
+    }
+
+    .navbar-toggler {
+      outline:none;
+    }
+
+    .navbar-collapse.collapse.show {
+      background: linear-gradient(250deg, $primary 0%, #444 51%, #444 75%);
+      position: absolute;
+      top: $top-navbar-height+5px;
+      left:0;
+      right:0;
+      z-index: 9999;
+      .navbar-nav {
+        flex-direction: column !important;
+      }
+      .nav-item {
+        display:block;
+        width:100%;
+      }
+      .navbar-nav .nav-link {
+        text-align: right;
+        padding-right: 10px;
       }
     }
 
@@ -62,6 +98,12 @@ main {
     .container {
       position: relative;
       z-index: 2;
+    }
+    i {
+      vertical-align: middle;
+    }
+    .btn {
+      margin: 0 5px 10px 5px;
     }
   }
 

@@ -28,8 +28,10 @@ module.exports = function(grunt) {
       },
       js: {
         src: [
-          //'src/js/libs/bootstrap.min.js',
+          'src/js/libs/jquery-3.3.1.min.js',
+          'src/js/libs/bootstrap.min.js',
           'src/js/libs/highlight.pack.js',
+          'src/js/site.js',
         ],
         dest: 'public/assets/js/libs.min.js',
       },
